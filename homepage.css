@@ -1,0 +1,21 @@
+#reddit-logo {
+    height: 4.5rem;
+    width: 8rem;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+#advertise-on-red-icon {
+    height: 2rem;
+    width: 2rem;
+    
+}
