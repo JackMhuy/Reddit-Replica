@@ -9,26 +9,20 @@
 </head>
 <body>
     <nav>
-        <ul class = "left">
-            <li>
-                <img alt = "reddit logo" src="logo.png" width = "25" height = "25"/>
-                <li><a href = "#">reddit</a></li>
+        <ul>
+            <li class = "left"> <img alt = "reddit logo" src="logo.png" width = "25" height = "25"/></li> 
+            <li class = "left"><a href = "#">reddit</a></li>
+
+            <li class = "center"> <input type = "text"></li>
+
+            <li class = "right"><img alt = "click icon" src="click.png" width = "25" height = "25"/></li> 
+            <li class = "right"><img alt = "comment icon" src="comment.png" width = "25" height = "25"/></li> 
+            <li class = "right"> <img alt = "plus icon" src="plus.png" width = "25" height = "25"/></li> 
+            <li class = "right"><a href = "#">Create</a></li>
+            <li class = "right"> <img alt = "notif icon" src="notif.png" width = "25" height = "25"/></li>
+            <li class = "right">   <img alt = "profile photo" src="profile.png" width = "25" height = "25"/></li> 
             </li>
         </ul>
-        <div class = center>
-            <input type = "text">
-        </div>
-        <ul class = "right">
-            <li>  
-            <img alt = "click icon" src="click.png" width = "25" height = "25"/>
-            <img alt = "comment icon" src="comment.png" width = "25" height = "25"/>
-            <img alt = "plus icon" src="plus.png" width = "25" height = "25"/>
-            <li><a href = "#">Create</a></li>
-            <img alt = "notif icon" src="notif.png" width = "25" height = "25"/>
-            <img alt = "profile photo" src="profile.png" width = "25" height = "25"/>
-            </li>
-        </ul>
-        <!-- these slant -->
     </nav>
     <aside class="lside">
         <ul>
@@ -60,7 +54,6 @@
         <h4>crocheting</h4>
         <p> get your crocheting on! :D /r/ crocheting is a sub all about crocheting. you can post your work in progress, finished products and more</p>
         <!-- question for prof, confused on the entire first section starting from the ss of created jun4,2014 and everything below it up to top3% rank, some guidance on that would help -->
-        <!-- also do the drop downs need to work? -->
         <h2>Rules</h2>
         <ol>
             <li>no direct links to youtube</li>
@@ -93,12 +86,17 @@
                 <img alt="Chonky Chicken" src="chickenjpg">
                 <figcaption></figcaption>
             </figure>
-            section>
-                    <!-- can the figures just be a ul of photos under the image? -->
-                </section>
+            <section>
+                <button type = "button">Vote</button>
+                <button type = "button">Comment</button>
+                <button type = "button">Badge</button>
+                <button type = "button">Share</button>   
+            </section>
             <section class = "comments">
                 <input type = "text">
-                <!-- comment section meant to be api? or do i do html for it -->
+                <h2>
+                    Comments go here
+                </h2>
             </section>
         </main>
     </article>
