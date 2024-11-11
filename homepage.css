@@ -1,12 +1,26 @@
 #reddit-logo {
-    height: 4.5rem;
+    height: 2.5rem;
     width: 8rem;
-
+    margin-top: 0px;
+    
+}
+header ul{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
+body{
+    margin: 0;
+}
 header {
     display: flex;
     justify-content: space-between;
+    padding: 5px 15px;
+    border-bottom: 1px solid #cccccc;
+    
 }
 ul {
     list-style-type: none;
@@ -15,7 +29,60 @@ ul {
 }
 
 #advertise-on-red-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     
+}
+input{
+    border-radius: 2rem;
+    border: 1px solid #d2d2d2;
+    padding:10px;
+    
+    width: 30rem;
+    background-color: #e5ebee;
+    
+    font-size: 16px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 17rem 1fr;
+
+    
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+aside{
+    border-right: 1px solid #cccccc;
+}
+button{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px 30px;
+}
+button:hover {
+    background-color: #f6f8f9; /* Changes color when hovered */
+    cursor: pointer; /* Shows pointer on hover */
+}
+
+#home-aside{
+    background-color: #e5ebee;
+}
+article header{
+    display: flex;
+
+}
+nav ul button{
+    display: flex;
+    background-color: #e5ebee;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+div{
+    margin: 20px;
 }
