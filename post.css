@@ -1,3 +1,16 @@
+.Reddit{
+    color: red;
+    font-size: 2rem;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.Create{
+    color: black;
+    font-size: 1rem;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-decoration: none;
+}
 nav ul {
     display: flex;
     justify-content: space-between; 
@@ -34,15 +47,14 @@ ul{
 .lside {
     width: 20%; 
     padding: 10px;
-    background-color: #f8f9fa; 
+    /*background-color: #f8f9fa; */
     border-right: 1px solid #cccccc;
 }
 
 .rside {
     width: 20%; 
     padding: 10px;
-    background-color: #f8f9fa; 
-    border-left: 1px solid #cccccc;
+    background-color: #f8f9fa;
 }
 
 article {
@@ -71,7 +83,6 @@ input{
     border-radius: 2rem;
     border: 1px solid #d2d2d2;
     padding:10px;
-    
     width: 30rem;
     background-color: #e5ebee;
     
@@ -79,6 +90,7 @@ input{
 }
 
 .first{
+    flex-grow: 1;
     border-bottom:1px solid #cccccc;
 }
 
@@ -97,6 +109,23 @@ input{
 .fifth{
     border-bottom:1px solid #cccccc;
 }
+
+h3{
+    border-top:1px solid #cccccc;
+}
+
+.topRside{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.More{
+    display:flex;
+    justify-content: center;
+    color:plum;
+    text-decoration: none;
+}
+
 
 
 
