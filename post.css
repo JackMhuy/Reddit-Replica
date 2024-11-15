@@ -126,6 +126,23 @@ h3{
     text-decoration: none;
 }
 
+.navB{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.J{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:1px;
+    padding-bottom:1px;
+    border-radius:10px;
+    border-style: solid;
+}
+
 
 
 
