@@ -14,7 +14,7 @@ header ul{
 
 body{
     margin: 0;
-    
+    font-size: 14px;
 }
 header {
     display: flex;
@@ -23,7 +23,7 @@ header {
     border-bottom: 1px solid #cccccc;
     
 }
-ul {
+header ul {
     list-style-type: none;
     display: flex;
     gap: 10px;
@@ -54,26 +54,28 @@ main{
 aside ul{
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
+    padding:0;
     border-bottom: 1px solid #e6e6e6;
+    gap: 10px;
+
 }
 aside{
     border-right: 1px solid #cccccc;
+    padding: 0px 16px;
 }
 button{
     border: none;
     background-color: white;
     border-radius: 10px;
-    padding: 12px 30px;
+    padding: 8px 30px;
+    font-size: 14px;
 }
 button:hover {
     background-color: #f6f8f9; /* Changes color when hovered */
     cursor: pointer; /* Shows pointer on hover */
 }
 
-#home-aside{
-    background-color: #e5ebee;
-}
+
 article header{
     display: flex;
 
@@ -97,44 +99,50 @@ div{
     width: 1rem;
     height: 1rem;
 }
-
-
-
-.dropdown-btn {
-    background-color: #0079d3;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
+/*sidebar: title*/
+.title-sidebar{
+    color: #576f76; 
+}
+/*sidebar: top*/
+.top-sidebar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.home-sidebar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #e5ebee;
 }
 
-.dropdown-btn:hover {
-    background-color: #005ea1;
+.top-icon{
+    height: 30px;
+    width: 30px;
 }
 
-  /* Dropdown content styles */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
-.dropdown-content a {
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
+/*sidebar: community*/
+.community-sidebar{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    top: 100%; 
+.star-icon{
+    width: 22px;
+    height: 21.5px;
 }
-
+.Communities-icons{
+    height: 30px;
+    width: 35px;
+}
+ul button div{
+    margin:0;
+}
+ul button p{
+    margin:0;
+}
