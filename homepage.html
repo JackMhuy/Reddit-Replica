@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reddit Feed</title>
     <link rel="stylesheet" type="text/css" href="homepage.css">
+    <script src="homepage.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,12 +18,119 @@
         </ul>
 
         <ul>
-            <li><a href="#" alt="Advertise on Reddit" > <img src="images-and-icon/advertise-on-red-icon.png" alt="Advertise on Reddit icon" id="advertise-on-red-icon"> </a>
+            <li><button class="icons"> <img src="images-and-icon/advertise-on-red-icon.png" alt="advertise on Reddit icon" class="button-image"/> </button> </li>
             <li><a href="#" alt="Open chat">Open chat</a>
             <li><a href="#" alt="Create post">Create post</a>
             <li><a href="#" alt="Open inbox">Open inbox</a>
             <li><a href="#" alt="Open profile menu">Open profile menu</a>
         </ul>
     </header>
+    <main>
+        <aside>
+            <ul>
+                <button class="home-sidebar">
+                    <img src="images-and-icon/home.jpg" class="top-icon">
+                    <p>Home</p>
+                </button>
+                <button class="top-sidebar">
+                    <img src="images-and-icon/popular.jpg" class="top-icon">
+                    <p>Popular</p>
+                </button>
+                <button class="top-sidebar">
+                    <img src="images-and-icon/explore.jpg" class="top-icon">
+                    <p>Explore</p>
+                </button>
+                <button class="top-sidebar">
+                    <img src="images-and-icon/all.jpg" class="top-icon">
+                    <p>All</p>
+                </button>
+            </ul>
+            
+            <ul>
+                <button class="title-sidebar">CUSTOM FEEDS</button>
+                <button>Create a custom feed</button>
+            </ul>
+            
+            <ul>
+                <button class="title-sidebar">COMMUNITIES</button>
+                <button>Create a community</button>
+                <button class="community-sidebar">
+                    <img src="images-and-icon/aita.jpg" class="Communities-icons">
+                    <p>r/AmItheAsshole</p>
+                    <div>
+                        <img src="images-and-icon/star.jpg" class="star-icon">
+                    </div>
+                </button>
+                <button class="community-sidebar">
+                    <img src="images-and-icon/chatgpt.jpg" class="Communities-icons">
+                    <p>r/ChatGPT</p>
+                    <div>
+                        <img src="images-and-icon/star.jpg" class="star-icon">
+                    </div>
+                </button>
+                <button class="community-sidebar">
+                    <img src="images-and-icon/crappydes.jpg" class="Communities-icons">
+                    <p>r/CrappyDesign</p>
+                    <div>
+                        <img src="images-and-icon/star.jpg" class="star-icon">
+                    </div>
+                </button>
+                <button class="community-sidebar">
+                    <img src="images-and-icon/fauxmoi.jpg" class="Communities-icons">
+                    <p>r/Fauxmoi</p>
+                    <div>
+                        <img src="images-and-icon/star.jpg" class="star-icon">
+                    </div>
+                </button>
+                <button class="community-sidebar">
+                    <img src="images-and-icon/gaming.jpg" class="Communities-icons">
+                    <p>r/gaming</p>
+                    <div>
+                        <img src="images-and-icon/star.jpg" class="star-icon">
+                    </div>
+                </button>
+                <button class="community-sidebar">
+                    <img src="images-and-icon/jokes.jpg" class="Communities-icons">
+                    <p>r/Jokes</p>
+                    <div>
+                        <img src="images-and-icon/star.jpg" class="star-icon">
+                    </div>
+                </button>
+            </ul>
+            <ul>
+                <button class="title-sidebar">RESOURCES</button>
+                <button>About Reddit</button>
+                <button>Advertise</button>
+            </ul>
+            
+        </aside>
+        <div>
+            <article>
+                <header>
+                    <ul>
+                        <li>r/AskReddit</li>
+                    </ul>
+                    <ul>
+                        <li>9 hr. ago</li>
+                        
+                    </ul>
+                    <ul>
+                        <li><button>More information</button></li>
+                    </ul>
+                </header>
+                <p>
+                    What was the reason you last cried?
+                </p>
+                <nav>
+                    <ul id="post-interactive-buttons">
+                        <button> Like</button>
+                        <button> Comment</button>
+                        <button> Award</button>
+                        <button> Share</button>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+    </main>
 </body>
 </html>

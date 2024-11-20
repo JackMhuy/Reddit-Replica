@@ -1,21 +1,148 @@
 #reddit-logo {
-    height: 4.5rem;
+    height: 2.5rem;
     width: 8rem;
-
+    margin-top: 0px;
+    
+}
+header ul{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
+body{
+    margin: 0;
+    font-size: 14px;
+}
 header {
     display: flex;
     justify-content: space-between;
+    padding: 5px 15px;
+    border-bottom: 1px solid #cccccc;
+    
 }
-ul {
+header ul {
     list-style-type: none;
     display: flex;
     gap: 10px;
 }
 
 #advertise-on-red-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     
+}
+input{
+    border-radius: 2rem;
+    border: 1px solid #d2d2d2;
+    padding:10px;
+    
+    width: 30rem;
+    background-color: #e5ebee;
+    
+    font-size: 16px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 17rem 1fr;
+
+    
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    border-bottom: 1px solid #e6e6e6;
+    gap: 10px;
+
+}
+aside{
+    border-right: 1px solid #cccccc;
+    padding: 0px 16px;
+}
+button{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 30px;
+    font-size: 14px;
+}
+button:hover {
+    background-color: #f6f8f9; /* Changes color when hovered */
+    cursor: pointer; /* Shows pointer on hover */
+}
+
+
+article header{
+    display: flex;
+
+}
+nav ul button{
+    display: flex;
+    background-color: #e5ebee;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+div{
+    margin: 20px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+}
+.button-image {
+    width: 1rem;
+    height: 1rem;
+}
+/*sidebar: title*/
+.title-sidebar{
+    color: #576f76; 
+}
+/*sidebar: top*/
+.top-sidebar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.home-sidebar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #e5ebee;
+}
+
+.top-icon{
+    height: 30px;
+    width: 30px;
+}
+
+
+/*sidebar: community*/
+.community-sidebar{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.star-icon{
+    width: 22px;
+    height: 21.5px;
+}
+.Communities-icons{
+    height: 30px;
+    width: 35px;
+}
+ul button div{
+    margin:0;
+}
+ul button p{
+    margin:0;
 }
