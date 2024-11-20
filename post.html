@@ -11,99 +11,102 @@
 
     <nav>
         <ul>
-            <li class = "left"> <img alt = "reddit logo" src="Icons/logo.png" width = "25" height = "25"/></li> 
-            <li class = "left"><a href = "#">reddit</a></li>
-
+            <li class = "left"><button class = "navB"> <img alt = "reddit logo" src="Icons/logo.png" width = "35" height = "35"/></button></li> 
+            <li class = "left"><a class = "Reddit " href = "#">Reddit</a></li>
             <li class = "center"> <input type = "text"></li>
-
-            <li class = "right"><img alt = "click icon" src="Icons/click.png" width = "25" height = "25"/></li> 
-            <li class = "right"><img alt = "comment icon" src="Icons/comment.png" width = "25" height = "25"/></li> 
-            <li class = "right"> <img alt = "plus icon" src="Icons/plus.png" width = "25" height = "25"/></li> 
-            <li class = "right"><a href = "#">Create</a></li>
-            <li class = "right"> <img alt = "notif icon" src="Icons/notif.png" width = "25" height = "25"/></li>
-            <li class = "right">   <img alt = "profile photo" src="Icons/profile.png" width = "25" height = "25"/></li> 
+            <li class = "right"><button class = "navB"><img alt = "click icon" src="Icons/click.png" width = "35" height = "35"/></button></li> 
+            <li class = "right"><button class = "navB"><img alt = "comment icon" src="Icons/comment.png" width = "35" height = "35"/></button></li> 
+            <li class = "right"> <button  class = "navB"><img alt = "plus icon" src="Icons/plus.png" width = "35" height = "35"/></button></li> 
+            <li class = "right"><a class = "Create" href = "#">Create</a></li>
+            <li class = "right"><button  class = "navB"><img alt = "notif icon" src="Icons/notif.png" width = "35" height = "35"/></button></li>
+            <li class = "right"><button  class = "navB"> <img alt = "profile photo" src="Icons/profile.png" width = "35" height = "35"/></button></li> 
             </li>
         </ul>
     </nav>
 
     <section class = "assideCont">
         <aside class="lside">
-            <ul>
-                <li>home</li>
-                <li>popular</li>
-                <li>explore</li>
-                <li>all</li>
+            <ul class = "first">
+                <li><button>Home</button></li>
+                <li><button>Popular</button></li>
+                <li><button>Explore</button></li>
+                <li><button>All</button></li>
             </ul>
-            <h2>Custom feeds</h2>
-            <ul>
-                <li>create a custom feed</li>
+            <button>CUSTOM FEEDS</button>
+            <ul class = "second">
+                <li><button>create a custom feed</button></li>
             </ul>
-            <h2>recent</h2>
-            <ul>
-                <li><img alt = "icon" src="p1.png" width = "25" height = "25"/></li>
-                <li>r/crocheting</li>
-                <li><img alt = "icon" src="p2.png" width = "25" height = "25"/></li>
-                <li>r/webdev</li>
-                <li><img alt = "icon" src="p3.png" width = "25" height = "25"/></li>
-                <li>r/scu</li>
-                <li><img alt = "icon" src="p4.png" width = "25" height = "25"/></li>
-                <li>r/zlibrary</li>
+            <button>RECENT</button>
+            <ul class = "third">
+                <li><button><img alt = "icon" src="p1.png" width = "50" height = "50"/>r/crocheting</button></li>
+                <li><button><img alt = "icon" src="p1.png" width = "25" height = "25"/>r/webdev</button></li>
+                <li><button><img alt = "icon" src="p1.png" width = "25" height = "25"/>r/scu</button></li>
+                <li><button><img alt = "icon" src="p1.png" width = "25" height = "25"/>r/zlibrary</button></li>
             </ul>
-            <h2>communities</h2>
-            <h2>resources</h2>
+            <div class = "fourth">
+                <button>COMMUNITIES</button>
+                <ul>
+                    <li><button> + create </button></li>
+                </ul>
+            </div>
+            <div class = "fifth">
+                <button>RESOURCES</button>
+                <ul>
+                    <li><button> + create </button></li>
+                </ul>
+            </div>
         </aside>
-
+        <article>
+            <header>
+                <img alt = "icon" src="p6.png" width = "25" height = "25"/>
+                <ul>
+                    <li>r/crocheting</li>
+                    <li>4days ago</li>
+                </ul>
+                <p>username</p>
+            </header>
+            <main>
+                <h1>I made an even CHONKIER CHICKEN</h1>
+                <p>She is thicc and beautiful in all the right ways</p>
+                <figure>
+                    <img alt="Chonky Chicken" src="Icons/chicken.png">
+                    <figcaption></figcaption>
+                </figure>
+                <section>
+                    <button type = "button">Vote</button>
+                    <button type = "button">Comment</button>
+                    <button type = "button">Badge</button>
+                    <button type = "button">Share</button>   
+                </section>
+                <section class = "comments">
+                    <input type = "text">
+                    <h2>
+                        Comments go here
+                    </h2>
+                </section>
+            </main>
+        </article>
         <aside class = "rside">
-            <h2>r/crocheting</h2>
+            <div class = "topRside">
+                <h2>r/crocheting</h2>
+                <button class = "J">Joined</button>
+            </div>
             <h4>crocheting</h4>
             <p> get your crocheting on! :D /r/ crocheting is a sub all about crocheting. you can post your work in progress, finished products and more</p>
-            <!-- question for prof, confused on the entire first section starting from the ss of created jun4,2014 and everything below it up to top3% rank, some guidance on that would help -->
-            <h2>Rules</h2>
+            <a class = "More" href = "#">Show More</a>
+            <h3>Rules</h3>
             <ol>
-                <li>no direct links to youtube</li>
-                <li>be kind</li>
+                <li>No direct links to youtube</li>
+                <li>Be kind</li>
                 <li>No spam</li>
             </ol>
-            <h2>moderators</h2>
+            <h3 class = "break">Moderators</h3>
             <ul>
-                <li><img alt = "icon" src="p5.png" width = "25" height = "25"/></li>
-                <li>r/username</li>
-                <li><img alt = "icon" src="p6.png" width = "25" height = "25"/></li>
-                <li>r/username2</li>
+                <li><img alt = "icon" src="p5.png" width = "25" height = "25"/>r/username</li>
+                <li><img alt = "icon" src="p6.png" width = "25" height = "25"/>r/username2</li>
             </ul>
-            <p><img alt = "icon" src="envelope.png" width = "25" height = "25"/>message the mods</p>    
+            <p><button><img alt = "icon" src="envelope.png" width = "25" height = "25"/>message the mods</button></p>    
         </aside>
     </section>
-
-    <article>
-        <header>
-            <img alt = "icon" src="p6.png" width = "25" height = "25"/>
-            <ul>
-                <li>r/crocheting</li>
-                <li>4days ago</li>
-            </ul>
-            <p>username</p>
-        </header>
-        <main>
-            <h1>I made an even CHONKIER CHICKEN</h1>
-            <p>She is thicc and beautiful in all the right ways</p>
-            <figure>
-                <img alt="Chonky Chicken" src="Icons/chicken.png">
-                <figcaption></figcaption>
-            </figure>
-            <section>
-                <button type = "button">Vote</button>
-                <button type = "button">Comment</button>
-                <button type = "button">Badge</button>
-                <button type = "button">Share</button>   
-            </section>
-            <section class = "comments">
-                <input type = "text">
-                <h2>
-                    Comments go here
-                </h2>
-            </section>
-        </main>
-    </article>
 </body>
 </html>
