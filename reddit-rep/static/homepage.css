@@ -1,9 +1,11 @@
+/*body header*/
 #reddit-logo {
-    height: 2.5rem;
-    width: 8rem;
+    height: 2.2rem;
+    width: 6.8rem;
     margin-top: 0px;
     
 }
+
 header ul{
     margin: 0px;
     padding: 0;
@@ -12,34 +14,46 @@ header ul{
     flex-wrap: wrap;
 }
 
+
 body{
     margin: 0;
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding: 5px 16px;
     border-bottom: 1px solid #cccccc;
     
 }
+.button-image{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*
+button.icons{
+    padding:0;
+}
+    */
 header ul {
     list-style-type: none;
     display: flex;
     gap: 10px;
 }
 
-#advertise-on-red-icon {
-    height: 2.5rem;
-    width: 2.5rem;
+
     
-}
+
 input{
     border-radius: 2rem;
     border: 1px solid #d2d2d2;
     padding:10px;
     
-    width: 30rem;
+    width: 33rem;
     background-color: #e5ebee;
     
     font-size: 16px;
@@ -47,7 +61,7 @@ input{
 
 main{
     display: grid;
-    grid-template-columns: 17rem 1fr;
+    grid-template-columns: 17rem 1fr 20rem;
 
     
 }
@@ -86,19 +100,18 @@ nav ul button{
     border-radius: 20px;
     padding: 8px 20px;
 }
-div{
-    margin: 20px;
+#right-top-navigators{
+    gap:0 !important;
 }
 .icons{
     display: flex;
     align-items: center;
     border: none;
     background-color: #fff;
+    padding: 8px 8px;
+    border-radius: 50px;
 }
-.button-image {
-    width: 1rem;
-    height: 1rem;
-}
+
 /*sidebar: title*/
 .title-sidebar{
     color: #576f76; 
@@ -121,28 +134,107 @@ div{
 .top-icon{
     height: 30px;
     width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 
 /*sidebar: community*/
 .community-sidebar{
     display: flex;
-    justify-content: center;
-    padding: 5px 0;
+
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul button div{
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 .star-icon{
     width: 22px;
     height: 21.5px;
+    
+}
+div .star-icon{
+    margin-right: auto;
 }
 .Communities-icons{
     height: 30px;
     width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 ul button div{
     margin:0;
 }
 ul button p{
     margin:0;
+}
+/*post section*/
+.post-section-header{
+    display: flex;
+    justify-content: flex-start;
+    padding:0;
+    padding-bottom: 7px;
+    border-color:#e6e6e6;
+}
+.post-section-header button{
+    padding: 8px 10px;
+    border-radius: 35%;
+}
+
+main div{
+    margin: 7px 40px;
+}
+/*post*/
+article{
+    display:flex;
+    flex-direction: column;
+}
+.post{
+    margin: 7px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.post-button{
+    padding:0
+}
+.post-header{
+    display: flex;
+    border:0;
+    padding:0;
+    justify-content: space-between;
+}
+.post-info{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:2px 13px;
+}
+.post-image{
+    max-width:100%;
+    max-height:100%;
+}
+p{
+    margin:0;
+}
+#aita-post{
+    height: 30px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.button-container{
+    margin:0;
+}
+.post-title{
+    font-weight: bold;
+    font-size: large;
 }
