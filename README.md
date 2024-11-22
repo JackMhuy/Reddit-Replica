@@ -9,8 +9,8 @@
 - [Proposal Link](https://docs.google.com/document/d/1Nw5haA8Ax6wp7Zh9afLYrXTtBnYWDYMzm4H3TQ0UEdU/edit?usp=sharing)
 - Web Technologies: HTML/CSS/JS
 - Webpage assignment
-  - Araceli Franco: feed page
-  - Jack Tran: post page
+  - Araceli Franco: post page
+  - Jack Tran: feed page
 - Functionality
   - comment section (no need for subcomments)
   - Scrollable feed on home page
