@@ -1,9 +1,11 @@
+/*body header*/
 #reddit-logo {
     height: 2.5rem;
     width: 8rem;
     margin-top: 0px;
     
 }
+
 header ul{
     margin: 0px;
     padding: 0;
@@ -12,10 +14,13 @@ header ul{
     flex-wrap: wrap;
 }
 
+
 body{
     margin: 0;
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +28,17 @@ header {
     border-bottom: 1px solid #cccccc;
     
 }
+.button-image{
+    height: 20px;
+    width: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*
+button.icons{
+    padding:0;
+}
+    */
 header ul {
     list-style-type: none;
     display: flex;
@@ -47,7 +63,7 @@ input{
 
 main{
     display: grid;
-    grid-template-columns: 17rem 1fr;
+    grid-template-columns: 17rem 1fr 20rem;
 
     
 }
@@ -86,9 +102,7 @@ nav ul button{
     border-radius: 20px;
     padding: 8px 20px;
 }
-div{
-    margin: 20px;
-}
+
 .icons{
     display: flex;
     align-items: center;
@@ -121,28 +135,82 @@ div{
 .top-icon{
     height: 30px;
     width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 
 /*sidebar: community*/
 .community-sidebar{
     display: flex;
-    justify-content: center;
-    padding: 5px 0;
+
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul button div{
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 .star-icon{
     width: 22px;
     height: 21.5px;
+    
+}
+div .star-icon{
+    margin-right: auto;
 }
 .Communities-icons{
     height: 30px;
     width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 ul button div{
     margin:0;
 }
 ul button p{
     margin:0;
+}
+/*post section*/
+.post-section-header{
+    display: flex;
+    justify-content: flex-start;
+    padding:0;
+    padding-bottom: 7px;
+    border-color:#e6e6e6;
+}
+
+main div{
+    margin: 7px 40px;
+}
+/*post*/
+.post-header{
+    display: flex;
+    border:0;
+    justify-content: space-between;
+}
+.post-info{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+p{
+    margin:0;
+}
+#aita-post{
+    height: 30px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.button-container{
+    margin:0;
+}
+.post-title{
+    
 }
