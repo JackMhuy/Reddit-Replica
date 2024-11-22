@@ -13,7 +13,7 @@ app.get('/', (c) => {
 })
 
 const port = 3000
-console.log(`Server is running on http://localhost:${port}`)
+console.log(`Server is running on http://localhost:${port}/homepage.html`)
 
 serve({
   fetch: app.fetch,
