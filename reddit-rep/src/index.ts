@@ -23,6 +23,7 @@ app.get('/api/comments', (c) => {
 
 const port = 3000
 console.log(`Server is running on http://localhost:${port}/homepage.html`)
+console.log(`Server is running on http://localhost:${port}/post.html`)
 
 serve({
   fetch: app.fetch,

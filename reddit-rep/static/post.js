@@ -42,7 +42,7 @@ async function getComments() {
     console.log(data, "\n");
 
     const ul = document.querySelector(".comments ul"); // Ensure you target the correct <ul>
-    ul.innerHTML = ""; // Clear existing comments before adding new ones
+    //ul.innerHTML = ""; // Clear existing comments before adding new ones
 
     data.forEach(comment => {
       const li = document.createElement("li");
