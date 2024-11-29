@@ -46,7 +46,7 @@ header ul {
 }
 
 
-    
+
 
 input{
     border-radius: 2rem;
@@ -76,6 +76,8 @@ aside ul{
 aside{
     border-right: 1px solid #cccccc;
     padding: 0px 16px;
+    overflow-y: auto;
+    height: 750px;
 }
 button{
     border: none;
@@ -175,22 +177,30 @@ ul button p{
     margin:0;
 }
 /*post section*/
+.p-s-h-icon{
+    height:25px;
+    width: 50px;
+}
 .scrolling-middle{
     overflow-y: auto;
-    height: 850px;
+    height: 750px;
+    margin-top:0;
 }
 .post-section-header{
     display: flex;
     justify-content: flex-start;
     padding:0;
-    padding-bottom: 7px;
+    
     border-color:#e6e6e6;
 }
 .post-section-header button{
     padding: 8px 10px;
     border-radius: 35%;
 }
-
+.post-text{
+    text-align: left ;
+    line-height: 1.5;
+}
 main div{
     margin: 7px 40px;
 }
@@ -198,8 +208,10 @@ main div{
 #post-interactive-buttons{
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding-left: 20px;
     gap: 10px;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 article{ 
@@ -214,6 +226,7 @@ article{
     align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 0;
+    gap: 10px;
 }
 .post-button{
     padding:0
@@ -234,6 +247,7 @@ article{
 .post-image{
     max-width:100%;
     max-height:100%;
+    border-radius: 3%;
 }
 p{
     margin:0;
@@ -248,6 +262,6 @@ p{
     margin:0;
 }
 .post-title{
-    font-weight: bold;
-    font-size: large;
+    font-weight:600;
+    font-size:large;
 }
