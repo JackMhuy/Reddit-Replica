@@ -18,11 +18,59 @@
         </ul>
 
         <ul id="right-top-navigators">
-            <button class="icons"> <img src="images-and-icon/advertise-on-red-icon.png" class="button-image"/> </button> 
+            <button class="icons"> <img src="images-and-icon/advertise-on-red-icon.png" class="aor"/> </button> 
             <button class="icons"> <img src="images-and-icon/open-chat.jpg"  class="button-image"/> </button> 
             <button class="icons"> <img src="images-and-icon/create-post.jpg"  class="button-image"/> Create</button> 
             <button class="icons"> <img src="images-and-icon/bell.jpg"  class="button-image"/> </button> 
-            <button class="icons"> <img src="images-and-icon/pfp.jpg"  class="button-image"/> </button> 
+            <div class="pfp-dropdown">
+                <button class="icons"> <img src="images-and-icon/pfp.jpg"  id="pfp"/> </button>  
+                <div class="dropdown-menu">
+                    <ul>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/pfp.jpg" class="aor">
+                            <p>View Profile</p>
+                        </button>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/edit-avatar.jpg" class="menu-icons">
+                            <p>Edit Avatar</p>
+                        </button>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/achievements.jpg" class="menu-icons">
+                            <p>Achievements</p>
+                        </button>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/contributor.jpg" class="menu-icons">
+                            <p>Contributor Program</p>
+                        </button>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/dark.jpg" class="menu-icons">
+                            <p>Dark Mode</p>
+                        </button>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/logout.jpg" class="menu-icons">
+                            <p>Log Out</p>
+                        </button>
+                    </ul>
+                    <ul>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/advertise-on-red-icon.png" class="menu-icons">
+                            <p>Advertise on Reddit</p>
+                        </button>
+                    </ul>
+                    <ul>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/setting.jpg" class="menu-icons">
+                            <p>Settings</p>
+                        </button>
+                    </ul>
+                    <ul>
+                        <button class="menu-buttons">
+                            <img src="images-and-icon/premium.jpg" class="menu-icons">
+                            <p>Premium</p>
+                        </button>
+                    </ul>
+                </div>
+            </div>
         </ul>
     </header>
     <main>
@@ -47,73 +95,204 @@
             </ul>
             
             <ul>
-                <button class="title-sidebar">CUSTOM FEEDS</button>
-                <button>Create a custom feed</button>
+                <div class="dropdown-header-i">
+                    <button class="title-sidebar">CUSTOM FEEDS</button>
+                </div>
+                <div class="dropdown-content-i">
+                    <button class="create-csb">
+                        <div>
+                            <img src="images-and-icon/add.jpg" class="Communities-icons">
+                        </div>
+                        <div>
+                            <p>Create a custom feed</p>
+                        </div>
+                    </button>
+                </div>
             </ul>
             
             <ul>
-                <button class="title-sidebar">COMMUNITIES</button>
-                <button>Create a community</button>
-                <button class="community-sidebar">
-                    <div>
-                        <img src="images-and-icon/aita.jpg" class="Communities-icons">
-                        <p>r/AmItheAsshole</p>
-                    </div>
-                    <div>
-                        <img src="images-and-icon/star.jpg" class="star-icon">
-                    </div>
-                </button>
-                <button class="community-sidebar">
-                    <div>
-                        <img src="images-and-icon/chatgpt.jpg" class="Communities-icons">
-                        <p>r/ChatGPT</p>
-                    </div>
-                    <div>
-                        <img src="images-and-icon/star.jpg" class="star-icon">
-                    </div>
-                </button>
-                <button class="community-sidebar">
-                    <div>
-                        <img src="images-and-icon/crappydes.jpg" class="Communities-icons">
-                        <p>r/CrappyDesign</p>
-                    </div>
-                    <div>
-                        <img src="images-and-icon/star.jpg" class="star-icon">
-                    </div>
-                </button>
-                <button class="community-sidebar">
-                    <div>
-                        <img src="images-and-icon/fauxmoi.jpg" class="Communities-icons">
-                        <p>r/Fauxmoi</p>
-                    </div>
-                    <div>
-                        <img src="images-and-icon/star.jpg" class="star-icon">
-                    </div>
-                </button>
-                <button class="community-sidebar">
-                    <div>
-                        <img src="images-and-icon/gaming.jpg" class="Communities-icons">
-                        <p>r/gaming</p>
-                    </div>
-                    <div>
-                        <img src="images-and-icon/star.jpg" class="star-icon">
-                    </div>
-                </button>
-                <button class="community-sidebar">
-                    <div>
-                        <img src="images-and-icon/jokes.jpg" class="Communities-icons">
-                        <p>r/Jokes</p>
-                    </div>
-                    <div>
-                        <img src="images-and-icon/star.jpg" class="star-icon">
-                    </div>
-                </button>
+                <div class="dropdown-header">
+                    <button class="title-sidebar">COMMUNITIES</button>
+                </div>
+                
+                <div class="dropdown-content">
+                    <button class="create-csb">
+                        <div>
+                            <img src="images-and-icon/add.jpg" class="Communities-icons">
+                        </div>
+                        <div>
+                            <p>Create a community</p>
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <div>
+                            <img src="images-and-icon/aita.jpg" class="Communities-icons">
+                            <p>r/AmItheAsshole</p>
+                        </div>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <div>
+                            <img src="images-and-icon/chatgpt.jpg" class="Communities-icons">
+                            <p>r/ChatGPT</p>
+                        </div>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <div>
+                            <img src="images-and-icon/crappydes.jpg" class="Communities-icons">
+                            <p>r/CrappyDesign</p>
+                        </div>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <div>
+                            <img src="images-and-icon/fauxmoi.jpg" class="Communities-icons">
+                            <p>r/Fauxmoi</p>
+                        </div>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <div>
+                            <img src="images-and-icon/gaming.jpg" class="Communities-icons">
+                            <p>r/gaming</p>
+                        </div>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <div>
+                            <img src="images-and-icon/jokes.jpg" class="Communities-icons">
+                            <p>r/Jokes</p>
+                        </div>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                </div>
             </ul>
             <ul>
-                <button class="title-sidebar">RESOURCES</button>
-                <button>About Reddit</button>
-                <button>Advertise</button>
-            </ul>
+                <div class="dropdown-header-ii">
+                    <button class="title-sidebar">RESOURCES</button>
+                </div>
+                
+                <div class="dropdown-content-ii">
+                    <ul>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/about-red.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>About Reddit</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/advertise.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Advertise</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/careers.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Help</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/blog.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Blog</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/help.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Careers</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/press.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Press</p>
+                            </div>
+                        </button>
+                    </ul>
+                    <ul>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/communities.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Communities</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/bestofreddit.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Best of Reddit</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/topics.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Topics</p>
+                            </div>
+                        </button>
+                    </ul>
+                    
+                    <ul>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/content-pol.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Content Policy</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/privacy-pol.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>Private Policy</p>
+                            </div>
+                        </button>
+                        <button class="create-csb">
+                            <div>
+                                <img src="images-and-icon/user-agg.jpg" class="Communities-icons">
+                            </div>
+                            <div>
+                                <p>User Agreement</p>
+                            </div>
+                        </button>
+                    </ul>
+                </div>
+            
+            
+                
             
         </aside>
         <div class="scrolling-middle">
@@ -198,7 +377,31 @@
                             </ul>
                         </nav>
             </article>
-            
+            <article>
+                <button class="post-button" onclick="location.href='post.html'"> 
+                        <header class="post-header">
+                            <div class="post-info">
+                                <img src="images-and-icon/crochet-icon.jpg" id="aita-post">
+                                <p>r/AmIOverreacting</p>
+                        
+                                <p>21 hr. ago</p>
+                                
+                            </div>
+                        </header>
+                        <div class="post">
+                            <p class="post-title">I still think about this interaction once in a while. Did I over react?? lol</p>
+                            <img src="images-and-icon/amioverreacting.jpg" class="post-image">
+                        </div>
+                </button>
+                        <nav>
+                            <ul id="post-interactive-buttons">
+                                <button class="interactive-buttons"> Like</button>
+                                <button class="interactive-buttons"> Comment</button>
+                                <button class="interactive-buttons"> Award</button>
+                                <button class="interactive-buttons"> Share</button>
+                            </ul>
+                        </nav>
+            </article>
         </div>
         <div>
 
