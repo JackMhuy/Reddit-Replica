@@ -8,11 +8,9 @@
     <title>Reddit Post Page</title>
 </head>
 <body>
-
     <nav>
         <ul>
-            <li class = "left"><button class = "navB"> <img alt = "reddit logo" src="Icons/logo.png" width = "35" height = "35"/></button></li> 
-            <li class = "left"><a class = "Reddit " href = "#">Reddit</a></li>
+            <li class = left> <img src="images-and-icon/reddit-Logo.png" class="logo" id="reddit-logo" alt="The reddit logo"> </li>
             <li class = "center"> <input type = "text"></li>
             <li class = "right"><button class = "navB"><img alt = "click icon" src="Icons/click.png" width = "35" height = "35"/></button></li> 
             <li class = "right"><button class = "navB"><img alt = "comment icon" src="Icons/comment.png" width = "35" height = "35"/></button></li> 
@@ -26,106 +24,149 @@
 
     <section class = "assideCont">
         <aside class="lside">
-            <ul class = "first">
-                <li><button class="home-sidebar"><img src="images-and-icon/home.jpg" class="top-icon" >Home</button></li>
-                <li><button class="home-sidebar"><img src="images-and-icon/popular.jpg" class="top-icon">Popular</button></li>
-                <li><button class="home-sidebar"> <img src="images-and-icon/explore.jpg" class="top-icon">Explore</button></li>
-                <li><button class="home-sidebar"><img src="images-and-icon/all.jpg" class="top-icon">All</button></li>
+            <ul class = first>
+                <button class="home-sidebar">
+                    <img src="images-and-icon/home.jpg" class="top-icon">
+                    <p>Home</p>
+                </button>
+                <button class="top-sidebar">
+                    <img src="images-and-icon/popular.jpg" class="top-icon">
+                    <p>Popular</p>
+                </button>
+                <button class="top-sidebar">
+                    <img src="images-and-icon/explore.jpg" class="top-icon">
+                    <p>Explore</p>
+                </button>
+                <button class="top-sidebar">
+                    <img src="images-and-icon/all.jpg" class="top-icon">
+                    <p>All</p>
+                </button>
             </ul>
-            <details class = "second">
-                <summary><button>CUSTOM FEEDS</button></summary>
-                <ul >
-                    <li><button>create a custom feed</button></li>
-                </ul>
-            </details>
-            <details class = "third">
-                <summary><button>RECENT</button></summary>
+            
+            <details class = second>
+                <summary><button class="title-sidebar">CUSTOM FEEDS</button></summary>
                 <ul>
-                    <li><button class = "thirdB"><img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>r/crocheting</button></li>
-                    <li><button class = "thirdB"><img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>r/webdev</button></li>
-                    <li><button class = "thirdB"><img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>r/scu</button></li>
-                    <li><button class = "thirdB"><img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>r/zlibrary</button></li>
+                    <button>Create a custom feed</button>
                 </ul>
             </details>
             
-            <details class = "fourth">
-                    <summary><button>COMMUNITIES</button></summary>
-                    <ul>
-                        <li><button> + create </button></li>
-                    </ul>
-            </details>
-            
-            <details class = "fifth">
-                <summary><button>RESOURCES</button></summary>
+            <details class = third>
+                <summary> <button class="title-sidebar">COMMUNITIES</button></summary>
                 <ul>
-                    <li><button> + create </button></li>
+                    <button>Create a community</button>
+                    <button class="community-sidebar">
+                        <img src="images-and-icon/aita.jpg" class="Communities-icons">
+                        <p>r/AmItheAsshole</p>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <img src="images-and-icon/chatgpt.jpg" class="Communities-icons">
+                        <p>r/ChatGPT</p>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <img src="images-and-icon/crappydes.jpg" class="Communities-icons">
+                        <p>r/CrappyDesign</p>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <img src="images-and-icon/fauxmoi.jpg" class="Communities-icons">
+                        <p>r/Fauxmoi</p>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <img src="images-and-icon/gaming.jpg" class="Communities-icons">
+                        <p>r/gaming</p>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
+                    <button class="community-sidebar">
+                        <img src="images-and-icon/jokes.jpg" class="Communities-icons">
+                        <p>r/Jokes</p>
+                        <div>
+                            <img src="images-and-icon/star.jpg" class="star-icon">
+                        </div>
+                    </button>
                 </ul>
             </details>
+        <details class = fourth>
+            <summary><button class="title-sidebar">RESOURCES</button></summary>
+            <ul>
+                <button>About Reddit</button>
+                <button>Advertise</button>
+            </ul>
+        </details>
+
         </aside>
         <article>
-            <header>
-                <img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>
-                <ul>
-                    <li>r/crocheting</li>
-                    <li>4days ago</li>
-                </ul>
-                <p>username</p>
-            </header>
             <main>
-                <div>
+                <div class="topText">
+                    <img alt="icon" src="Icons/p1.jpg" class="userP"/>
+                    <div class="textAndInfo">
+                        <div class="infoRight">
+                            <ul>
+                                <li>r/crocheting</li>
+                                <li>*</li>
+                                <li>4 days ago</li>
+                            </ul>
+                            <p>crocheter</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="postText">
                     <h1>I made an even CHONKIER CHICKEN</h1>
                     <p>She is thicc and beautiful in all the right ways</p>
                 </div>
-                <!-- 
-                   <figure>
-                    <img alt="Chonky Chicken" src="Icons/chicken.png">
-                    <figcaption></figcaption>
-                </figure>
-                -->
                 <div class="slideshow-container">
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="Icons/chicken.png" style="width:100%">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="Icons/chicken.png" style="width:100%">
                     </div>
-                  
+            
                     <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="Icons/chicken.png" style="width:100%">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="Icons/chicken2.png" style="width:100%">
                     </div>
-                  
                     <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="Icons/chicken.png" style="width:100%">
-                      
+                        <div class="numbertext">3 / 3</div>
+                        <img src="Icons/chicken3.png" style="width:100%">
                     </div>
-                  
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
+                    </div>
+                <br>
             
-                  <!-- The dots/circles -->
-                  <div style="text-align:center">
+                <!-- The dots/circles -->
+                <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
-                  
+                </div>
                 
                 <section>
-                    <button type = "button">Vote</button>
-                    <button type = "button">Comment</button>
-                    <button type = "button">Badge</button>
-                    <button type = "button">Share</button>   
+                    <button class = "commentB" type = "button">Vote</button>
+                    <button class = "commentB" type = "button">Comment</button>
+                    <button class = "commentB" type = "button">Badge</button>
+                    <button class = "commentB" type = "button">Share</button>   
                 </section>
                 <section class = "comments">
                     <input type = "text">
-                    <h2>
-                        Comments go here
-                    </h2>
+                </section>
+                <section class="comments">
+                    <h2>Comments</h2>
+                    <ul></ul>
                 </section>
             </main>
         </article>
@@ -137,6 +178,22 @@
             <h4>crocheting</h4>
             <p> get your crocheting on! :D /r/ crocheting is a sub all about crocheting. you can post your work in progress, finished products and more</p>
             <a class = "More" href = "#">Show More</a>
+            <h6>Created Jan14, 2014</h6>
+            <h6>Public</h6>
+            <div class="stats">
+                <div class="stat-item">
+                    <h4>46K</h4>
+                    <p>Members</p>
+                </div>
+                <div class="stat-item">
+                    <h4>8</h4>
+                    <p>Online</p>
+                </div>
+                <div class="stat-item">
+                    <h4>Top 3%</h4>
+                    <p>Rank by Size</p>
+                </div>
+            </div>
             <h3>Rules</h3>
             <ol>
                 <li>No direct links to youtube</li>
@@ -145,8 +202,8 @@
             </ol>
             <h3 class = "break">Moderators</h3>
             <ul>
-                <li><img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>r/username</li>
-                <li><img alt = "icon" src="Icons/p1.jpg" width = "25" height = "25"/>r/username2</li>
+                <li><img alt = "icon" src="Icons/p1.jpg" class = "rIcon" /> r/username1</li>
+                <li><img alt = "icon" src="Icons/p1.jpg" class = "rIcon" /> r/username2</li>
             </ul>
             <p><button class = "env"><img alt = "icon" src="Icons/envelope.png" width = "25" height = "25"/>message the mods</button></p>    
         </aside>
