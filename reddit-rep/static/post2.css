@@ -1,0 +1,706 @@
+/*body header*/
+#reddit-logo {
+    height: 2.2rem;
+    width: 6.8rem;
+    margin-top: 0px;
+    
+}
+
+header ul{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+body{
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px 8px 22px;
+    border-bottom: 1px solid #cccccc;
+    
+}
+.button-image{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+#pfp{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.aor{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.menu-icons{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.dropdown-menu{
+    
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 48px; /* Adjust to match profile picture size */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.266);
+    border-radius: 10px;
+    width: 250px; /* Adjust as needed */
+    z-index: 1000;
+    height: 520px;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.menu-buttons{
+    display: flex;
+    
+    padding: 8px 20px;
+    width:100%;
+    gap:8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.dropdown-menu ul{
+    flex-direction: column;
+    flex: 1;
+    display: flex;
+    margin-top: 5px;
+    margin-top: 5px;
+    border-bottom: 1px solid #e6e6e6;
+    
+}
+.pfp-dropdown{
+    position: relative;
+    display: inline-block;
+}
+.homepage-dropdown{
+    margin:0;
+    padding:0;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+
+.search-container {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+}
+
+.search-container input[type="text"] {
+    width: 33rem;
+    padding: 10px;
+    padding-left: 40px; /* Adjust padding to make space for the icon */
+    border-radius: 2rem;
+    border: 1px solid #d2d2d2;
+    background-color: #e5ebee;
+    color: lightgray; /* Change text color inside input box */
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+}
+
+
+#staticText{
+    color: lightgray;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    border-bottom: 1px solid #e6e6e6;
+    margin:0;
+    padding-top:14px;
+    padding-bottom: 14px;
+
+}
+
+.left, .right {
+    display: flex;
+    
+}
+
+.center {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+ul{
+    list-style: none;
+}
+
+.assideCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding:0;
+}
+
+.lside {
+    width: 20%; 
+    padding: 0;
+    /*background-color: #f8f9fa; */
+    border-right: 1px solid #cccccc;
+    margin:0;
+}
+
+.rside {
+    width: 20%; 
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+article {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+article main {
+    text-align: center;
+}
+
+article header{
+    display: flex;            /* Flex container for alignment */
+    flex-direction: row;   /* Stack items vertically */
+    align-items: flex-start;  /* Align content to the left */
+    padding:0;
+    margin:0;
+}
+button{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 30px;
+    font-size: 14px;
+}
+button:hover {
+    background-color: #f6f8f9; /* Changes color when hovered */
+    cursor: pointer; /* Shows pointer on hover */
+}
+
+nav ul button{
+    display: flex;
+    background-color: #e5ebee;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+#right-top-navigators{
+    gap:0 !important;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    padding: 0px 8px;
+    border-radius: 50px;
+}
+
+/*sidebar: title*/
+.title-sidebar{
+    color: #576f76; 
+    width:100%;
+}
+/*sidebar: top*/
+.top-sidebar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.home-sidebar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #e5ebee;
+}
+
+.top-icon{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*drop down sidebar*/
+.dropdown-content{
+    margin:0;
+    max-height: 300px;
+    transition: max-height 0.3s ease-out;
+}
+.dropdown-header{
+    margin:0;
+}
+.dropdown-content.close {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.dropdown-content-i{
+    margin:0;
+    max-height: 300px;
+    transition: max-height 0.2s ease-out;
+}
+.dropdown-header-i{
+    margin:0;
+}
+.dropdown-content-i.close {
+    overflow: hidden;
+    max-height: 0;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    left:0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.button-image {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.topRside{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.More{
+    display:flex;
+    justify-content: center;
+    color:plum;
+    text-decoration: none;
+}
+
+.navB{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.J{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:1px;
+    padding-bottom:1px;
+    border-radius:10px;
+    border-style: solid;
+}
+
+.top-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.home-sidebar{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+}
+
+.thirdB{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.env{
+    background-color:#cccccc !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-bottom:1px solid #cccccc;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+
+.stat-item p {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #666;
+}
+.rIcon{
+    height: 30px;
+    width: 35px;
+    border-radius: 50%;
+
+}
+
+ol{
+    border-bottom:1px solid #cccccc;
+}
+/*sidebar: community*/
+
+.community-sidebar{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 7px 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.create-csb{
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px 15px;
+    gap:10px;
+}
+.dropdown-header-ii{
+    margin: 0;
+}
+.dropdown-content-ii{
+    margin:0;
+    transition: max-height 0.5s ease-out;
+}
+.dropdown-content-ii.close {
+    overflow: hidden;
+    max-height: 0;
+}
+ul button div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.star-icon{
+    width: 22px;
+    height: 21.5px;
+    
+}
+div .star-icon{
+    margin-right: auto;
+}
+.Communities-icons{
+    height: 30px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ul button div{
+    margin:0;
+}
+ul button p{
+    margin:0;
+}
+
+
+/* Container for the profile photo and the text/info sections */
+.topText {
+    display: flex;             /* Align profile photo and text/info horizontally */
+    align-items: flex-start;   /* Align items at the top */
+    gap: 15px;                 /* Add space between the image and the content */
+}
+
+/* Profile photo styles */
+.userP {
+    width: 50px;              /* Size of the profile photo */
+    height: 50px;             /* Make it square */
+    border-radius: 50%;       /* Round the image */
+}
+/* Container for the profile photo and text/info sections */
+.topText {
+    display: flex;            /* Align profile photo and content horizontally */
+    gap: 15px;                /* Add space between the image and the content */
+    align-items: flex-start;  /* Align items at the top */
+}
+
+/* Profile photo styles */
+.userP {
+    width: 50px;              /* Size of the profile photo */
+    height: 50px;             /* Make it square */
+    border-radius: 50%;       /* Round the image */
+}
+
+/* Info section styles (text on the right side of the profile photo) */
+.infoRight {
+    display: flex;            /* Align the list items horizontally */
+    flex-direction: column;   /* Stack list and username vertically */
+    align-items: flex-start;  /* Align text to the left */
+}
+
+/* Styles for the <ul> inside infoRight */
+.infoRight ul {
+    display: flex;            /* Align the list items horizontally */
+    gap: 10px;                /* Space between the list items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Remove any default styling from <li> */
+.infoRight ul li {
+    margin: 0;
+}
+
+/* Ensure the post text (h1 and p) are aligned to the left with no gap */
+.postText {
+    display: flex;            /* Align the h1 and p tags vertically */
+    flex-direction: column;   /* Stack them vertically */
+    align-items: flex-start;
+    padding-right: 2rem;
+    margin: 0;                /* Remove default margin */
+}
+
+/* Ensure the <h1> and <p> have no gap between them */
+.postText h1, .postText p {
+    margin: 0;                /* Remove margin to avoid spacing between the tags */
+}
+
+
+.topText h1, .topText p, .topText img{
+    margin: 0; /* Remove default margins */
+}
+
+.userP{
+    border-radius:  50%;
+    height: 40px;
+    width: 40px;
+}
+
+.action-buttons {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Aligns buttons to the left */
+    gap: 10px; /* Adds space between buttons */
+    margin-left: 20px; /* Optional: Adjust horizontal spacing */
+}
+
+.action-buttons {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Aligns items vertically in the container */
+    justify-content: flex-start; /* Aligns all buttons to the left */
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 10px; /* Optional: Add some spacing above the buttons */
+}
+
+.action-buttons {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Arrange buttons horizontally */
+    gap: 10px; /* Add some space between the buttons */
+    margin-top: 10px; /* Optional: Space above the buttons */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.commentB {
+    padding: 8px 20px; /* More padding for oval shape */
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #b0b0b0; /* Light grey background */
+    border: none; /* No border */
+    border-radius: 50px; /* Makes the button oval-shaped */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; /* Remove any default underline from links */
+    color: white; /* Text color */
+}
+
+.commentB:hover {
+    background-color: #9e9e9e; /* Darker grey on hover */
+}
+
+
+
+/* Comment container styles */
+.comment {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* User info (profile photo + username + timestamp) */
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  /* Comment text */
+  .comment-text {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1em;
+  }
+  
+  /* Buttons (Reply, Award, Share) */
+  .comment-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+/* Buttons (Reply, Award, Share) */
+.comment-buttons button {
+    background-color: transparent; /* Same as the page background */
+    border: none; /* Remove the border */
+    color:black; /* Reddit-like blue text (or choose a color that matches your theme) */
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .comment-buttons button:hover {
+    background-color: #e0e0e0; /* Light grey background when hovered */
+    color: #333; /* Darker text color on hover */
+  }
+  
+  
