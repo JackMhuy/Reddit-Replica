@@ -596,6 +596,57 @@ ul button p{
     width: 40px;
 }
 
+.Addcomments input[type = "text"]{
+    width: 60rem;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-left: 40px; /* Adjust padding to make space for the icon */
+    border-radius: 2rem;
+    border: 1px solid black;
+    background-color:transparent;
+    color: black; /* Change text color inside input box */
+}
+.underC {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.underC label {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.underC select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.underC input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.underC input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.underC input[type="text"] {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-size: 16px;
+}
+
 .action-buttons {
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Stack items vertically */
@@ -625,12 +676,12 @@ ul button p{
     padding: 8px 20px; /* More padding for oval shape */
     font-size: 14px;
     cursor: pointer;
-    background-color: #b0b0b0; /* Light grey background */
+    background-color: lightgrey; /* Light grey background */
     border: none; /* No border */
     border-radius: 50px; /* Makes the button oval-shaped */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
     text-decoration: none; /* Remove any default underline from links */
-    color: white; /* Text color */
+    color: rgb(23, 21, 21); /* Text color */
 }
 
 .commentB:hover {
@@ -646,61 +697,59 @@ ul button p{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  
+}
+
   /* User info (profile photo + username + timestamp) */
-  .user-info {
+.user-info {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 8px;
-  }
-  
-  .profile-photo {
+}
+
+.profile-photo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  }
-  
-  .username {
+}
+
+.username {
     font-weight: bold;
     color: #333;
-  }
-  
-  .timestamp {
+}
+
+.timestamp {
     font-size: 0.8em;
     color: #888;
-  }
-  
+}
+
   /* Comment text */
-  .comment-text {
+.comment-text {
     margin-bottom: 8px;
     color: #333;
     font-size: 1em;
-  }
-  
+}
+
   /* Buttons (Reply, Award, Share) */
-  .comment-buttons {
+.comment-buttons {
     display: flex;
     gap: 10px;
-  }
-  
+}
+
 /* Buttons (Reply, Award, Share) */
 .comment-buttons button {
     background-color: transparent; /* Same as the page background */
     border: none; /* Remove the border */
-    color:black; /* Reddit-like blue text (or choose a color that matches your theme) */
+    color:black; 
     font-size: 0.9em;
     font-weight: bold;
     cursor: pointer;
     padding: 6px 12px;
     border-radius: 50px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  .comment-buttons button:hover {
+}
+
+.comment-buttons button:hover {
     background-color: #e0e0e0; /* Light grey background when hovered */
     color: #333; /* Darker text color on hover */
-  }
-  
-  
+}

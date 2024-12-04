@@ -87,7 +87,7 @@ async function getComments() {
       const header = document.createElement("div");
       header.classList.add("comment-header");
       header.innerHTML = `
-        <img src="path/to/profile/photo.jpg" alt="${comment.username}'s profile picture">
+        <img src="path/to/profile/photo.png" alt="${comment.username}'s profile picture">
         <div class="username">${comment.username}</div>
         <div class="timestamp">${new Date(comment.timestamp).toLocaleDateString()}</div>
       `;
@@ -135,7 +135,7 @@ async function getComments() {
       const userInfo = document.createElement("div");
       userInfo.className = "user-info";
       userInfo.innerHTML = `
-        <img src="Icons/profile.png" alt="User profile photo" class="profile-photo">
+        <img src="Icons/bear1.png" alt="User profile photo" class="profile-photo">
         <span class="username">${comment.username}</span>
         <span class="timestamp">${new Date(comment.timestamp).toLocaleString()}</span>
       `;
