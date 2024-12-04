@@ -72,51 +72,6 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-async function getComments() {
-    const response = await fetch("http://localhost:3000/api/comments");
-    const comments = await response.json();
-  
-    const commentsList = document.getElementById("comments-list");
-  
-    comments.forEach((comment) => {
-      // Create a container for each comment
-      const li = document.createElement("li");
-      li.classList.add("comment");
-  
-      // Header containing profile photo, username, and timestamp
-      const header = document.createElement("div");
-      header.classList.add("comment-header");
-      header.innerHTML = `
-        <img src="path/to/profile/photo.png" alt="${comment.username}'s profile picture">
-        <div class="username">${comment.username}</div>
-        <div class="timestamp">${new Date(comment.timestamp).toLocaleDateString()}</div>
-      `;
-  
-      // Comment text
-      const commentText = document.createElement("div");
-      commentText.classList.add("comment-text");
-      commentText.textContent = comment.text;
-  
-      // Buttons for actions
-      const buttons = document.createElement("div");
-      buttons.classList.add("comment-buttons");
-      buttons.innerHTML = `
-        <button>⬆️ 15 ⬇️</button>
-        <button>Reply</button>
-        <button>Award</button>
-        <button>Share</button>
-      `;
-  
-      // Append all parts to the comment container
-      li.appendChild(header);
-      li.appendChild(commentText);
-      li.appendChild(buttons);
-  
-      // Add comment to the list
-      commentsList.appendChild(li);
-    });
-  }
-  
   async function getComments() {
     const response = await fetch("http://localhost:3000/api/comments");
     const data = await response.json();
