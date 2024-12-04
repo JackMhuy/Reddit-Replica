@@ -672,7 +672,11 @@ ul button p{
     justify-content: flex-start; /* Align items to the left */
 }
 
-.commentB {
+
+.commentB { 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 8px 20px; /* More padding for oval shape */
     font-size: 14px;
     cursor: pointer;
@@ -687,7 +691,30 @@ ul button p{
 .commentB:hover {
     background-color: #9e9e9e; /* Darker grey on hover */
 }
+.post-interactive-icon{
+    width:25px;
+    height:25px;
+    border-radius: 100%;
+}
+.upvote-image{
+    height:24px;
+    width:24px;
+    border-radius: 100%;
+}
 
+.downvote-image{
+    height:24px;
+    width:24px;
+    border-radius: 100%;
+}
+
+#like-button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 3px;
+}
 
 
 /* Comment container styles */

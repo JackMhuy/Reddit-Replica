@@ -343,10 +343,14 @@
                 </div>
                 
                 <section class="action-buttons">
-                    <button class="commentB" type="button">Vote</button>
-                    <button class="commentB" type="button">Comment</button>
-                    <button class="commentB" type="button">Badge</button>
-                    <button class="commentB" type="button">Share</button>
+                    <button id="like-button"class="commentB"> 
+                        <img class="upvote-image" src="images-and-iconi/upvote.jpg" onclick="toggleUpvote(this)">
+                        <p class="like-number">8.8k</p>
+                        <img class="downvote-image" src="images-and-iconi/downvote.jpg" onclick="toggleDownvote(this)">
+                    </button>
+                    <button class="commentB"><img src="images-and-iconi/comment.jpg" class="post-interactive-icon"> 16k</button>
+                    <button class="commentB"><img src="images-and-iconi/award.jpg" class="post-interactive-icon"> Award</button>
+                    <button class="commentB" id="share"> <img src="images-and-iconi/share.jpg" class="post-interactive-icon"> Share</button>
                 </section>
                 
                 <section class = "Addcomments">

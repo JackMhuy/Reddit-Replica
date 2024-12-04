@@ -169,3 +169,58 @@ async function getComments() {
   getComments();
   
   
+function toggleUpvote(upvoteImg) {
+  const button = upvoteImg.closest("#like-button"); // Get the parent button
+  const downvoteImg = button.querySelector(".downvote-image"); // Get the downvote image
+  const currentUpvoteSrc = upvoteImg.src; // Get current src of upvote image
+  const likeNumber = button.querySelector(".like-number");
+
+  // Check if the button is in the "upvoted" state
+  if (currentUpvoteSrc.endsWith("upvote.jpg")) {
+      // Change to "upvoted" state
+      button.style.backgroundColor = "#d93900"; // New background color
+      upvoteImg.src = "images-and-iconi/cl-upvoted.jpg"; // New upvote image
+      downvoteImg.src = "images-and-iconi/uncl-downvoted.jpg"; // New downvote image
+      likeNumber.style.color = "white";
+  } else if (currentUpvoteSrc.endsWith("uncl-upvoted.jpg")) {
+      button.style.backgroundColor = "#d93900"; // New background color
+      upvoteImg.src = "images-and-iconi/cl-upvoted.jpg"; // New upvote image
+      downvoteImg.src = "images-and-iconi/uncl-downvoted.jpg"; // New downvote image
+      likeNumber.style.color = "white";
+  } else {
+      // Revert to original state
+      button.style.backgroundColor = "#e5ebee"; // Reset background color
+      upvoteImg.src = "images-and-iconi/upvote.jpg"; // Original upvote image
+      downvoteImg.src = "images-and-iconi/downvote.jpg"; // Original downvote image
+      likeNumber.style.color = "black";
+  }
+}
+
+function toggleDownvote(downvoteImg) {
+  const button = downvoteImg.closest("#like-button"); // Get the parent button
+  const upvoteImg = button.querySelector(".upvote-image"); // Get the downvote image
+  const currentDownvoteSrc = downvoteImg.src; // Get current src of upvote image
+  const likeNumber = button.querySelector(".like-number");
+
+  // Check if the button is in the "downvote" state
+  if (currentDownvoteSrc.endsWith("downvote.jpg")) {
+      button.style.backgroundColor = "#6b5cff"; // New background color
+      upvoteImg.src = "images-and-iconi/uncl-upvoted.jpg"; // New upvote image
+      downvoteImg.src = "images-and-iconi/cl-downvoted.jpg"; // New downvote image
+      likeNumber.style.color = "white";
+  } else if (currentDownvoteSrc.endsWith("uncl-downvoted.jpg")) {
+      button.style.backgroundColor = "#6b5cff"; // New background color
+      upvoteImg.src = "images-and-iconi/uncl-upvoted.jpg"; // New upvote image
+      downvoteImg.src = "images-and-iconi/cl-downvoted.jpg"; // New downvote image
+      likeNumber.style.color = "white";
+  } else {
+      // Revert to original state
+      button.style.backgroundColor = "#e5ebee"; // Reset background color
+      upvoteImg.src = "images-and-iconi/upvote.jpg"; // Original upvote image
+      downvoteImg.src = "images-and-iconi/downvote.jpg"; // Original downvote image
+      likeNumber.style.color = "black";
+  }
+  
+  
+}
+
