@@ -14,7 +14,7 @@
         </ul>
 
         <ul>
-            <li><input type=""/></li>
+            <li><input type="" placeholder="Search Reddit"/></li>
         </ul>
 
         <ul id="right-top-navigators">
@@ -124,60 +124,62 @@
                             <p>Create a community</p>
                         </div>
                     </button>
-                    <button class="community-sidebar">
-                        <div>
-                            <img src="images-and-icon/aita.jpg" class="Communities-icons">
-                            <p>r/AmItheAsshole</p>
-                        </div>
-                        <div>
-                            <img src="images-and-icon/star.jpg" class="star-icon">
-                        </div>
-                    </button>
-                    <button class="community-sidebar">
-                        <div>
-                            <img src="images-and-icon/chatgpt.jpg" class="Communities-icons">
-                            <p>r/ChatGPT</p>
-                        </div>
-                        <div>
-                            <img src="images-and-icon/star.jpg" class="star-icon">
-                        </div>
-                    </button>
-                    <button class="community-sidebar">
-                        <div>
-                            <img src="images-and-icon/crappydes.jpg" class="Communities-icons">
-                            <p>r/CrappyDesign</p>
-                        </div>
-                        <div>
-                            <img src="images-and-icon/star.jpg" class="star-icon">
-                        </div>
-                    </button>
-                    <button class="community-sidebar">
-                        <div>
-                            <img src="images-and-icon/fauxmoi.jpg" class="Communities-icons">
-                            <p>r/Fauxmoi</p>
-                        </div>
-                        <div>
-                            <img src="images-and-icon/star.jpg" class="star-icon">
-                        </div>
-                    </button>
-                    <button class="community-sidebar">
-                        <div>
-                            <img src="images-and-icon/gaming.jpg" class="Communities-icons">
-                            <p>r/gaming</p>
-                        </div>
-                        <div>
-                            <img src="images-and-icon/star.jpg" class="star-icon">
-                        </div>
-                    </button>
-                    <button class="community-sidebar">
-                        <div>
-                            <img src="images-and-icon/jokes.jpg" class="Communities-icons">
-                            <p>r/Jokes</p>
-                        </div>
-                        <div>
-                            <img src="images-and-icon/star.jpg" class="star-icon">
-                        </div>
-                    </button>
+                    <div id="community-list">
+                        <button class="community-sidebar">
+                            <div>
+                                <img src="images-and-icon/aita.jpg" class="Communities-icons">
+                                <p>r/AmItheAsshole</p>
+                            </div>
+                            <div>
+                                <img src="images-and-icon/star.jpg" class="star-icon" onclick="changeImage(this)">
+                            </div>
+                        </button>
+                        <button class="community-sidebar">
+                            <div>
+                                <img src="images-and-icon/chatgpt.jpg" class="Communities-icons">
+                                <p>r/ChatGPT</p>
+                            </div>
+                            <div>
+                                <img src="images-and-icon/star.jpg" class="star-icon" onclick="changeImage(this)">
+                            </div>
+                        </button>
+                        <button class="community-sidebar">
+                            <div>
+                                <img src="images-and-icon/crappydes.jpg" class="Communities-icons">
+                                <p>r/CrappyDesign</p>
+                            </div>
+                            <div>
+                                <img src="images-and-icon/star.jpg" class="star-icon" onclick="changeImage(this)">
+                            </div>
+                        </button>
+                        <button class="community-sidebar">
+                            <div>
+                                <img src="images-and-icon/fauxmoi.jpg" class="Communities-icons">
+                                <p>r/Fauxmoi</p>
+                            </div>
+                            <div>
+                                <img src="images-and-icon/star.jpg" class="star-icon" onclick="changeImage(this)">
+                            </div>
+                        </button>
+                        <button class="community-sidebar">
+                            <div>
+                                <img src="images-and-icon/gaming.jpg" class="Communities-icons">
+                                <p>r/gaming</p>
+                            </div>
+                            <div>
+                                <img src="images-and-icon/star.jpg" class="star-icon" onclick="changeImage(this)">
+                            </div>
+                        </button>
+                        <button class="community-sidebar">
+                            <div>
+                                <img src="images-and-icon/jokes.jpg" class="Communities-icons">
+                                <p>r/Jokes</p>
+                            </div>
+                            <div>
+                                <img src="images-and-icon/star.jpg" class="star-icon" onclick="changeImage(this)">
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </ul>
             <ul>
@@ -301,7 +303,7 @@
                 <button> <img src="images-and-iconi/change-post-view.jpg" class="p-s-h-icon"> </button>
             </header>
             <article>
-                <button class="post-button" onclick="location.href='post.html'"> 
+                <button class="post-button" onclick="location.href='post2.html'"> 
                         <header class="post-header">
                             <div class="post-info">
                                 <img src="images-and-iconi/crochet-icon.jpg" id="aita-post">
@@ -318,10 +320,32 @@
                 </button>
                         <nav>
                             <ul id="post-interactive-buttons">
-                                <button class="interactive-buttons"> Like</button>
-                                <button class="interactive-buttons"> Comment</button>
-                                <button class="interactive-buttons"> Award</button>
-                                <button class="interactive-buttons"> Share</button>
+                                <button id="like-button"class="vote-button"> 
+                                    <img class="upvote-image" src="images-and-iconi/upvote.jpg" onclick="toggleUpvote(this)">
+                                    <p class="like-number">2.7k</p>
+                                    <img class="downvote-image" src="images-and-iconi/downvote.jpg" onclick="toggleDownvote(this)">
+                                </button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/comment.jpg" class="post-interactive-icon"> 48</button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/award.jpg" class="post-interactive-icon"> Award</button>
+                                <div class="share-dropdown">
+                                    <button class="interactive-buttons" id="share"> <img src="images-and-iconi/share.jpg" class="post-interactive-icon">Share</button>
+                                    <div class="share-dropdown-menu">
+                                        <ul>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/copylink.jpg" class="menu-icons">
+                                                <p>Copy Link</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/crosspost.jpg" class="menu-icons">
+                                                <p>Cross Post</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/embed.jpg" class="menu-icons">
+                                                <p>Embed</p>
+                                            </button>
+                                        </ul>
+                                </div>
+                                
                             </ul>
                         </nav>
             </article>
@@ -344,10 +368,31 @@
                 </button>
                         <nav>
                             <ul id="post-interactive-buttons">
-                                <button class="interactive-buttons"> Like</button>
-                                <button class="interactive-buttons"> Comment</button>
-                                <button class="interactive-buttons"> Award</button>
-                                <button class="interactive-buttons"> Share</button>
+                                <button id="like-button"class="vote-button"> 
+                                    <img class="upvote-image" src="images-and-iconi/upvote.jpg" onclick="toggleUpvote(this)">
+                                    <p class="like-number">1.6k</p>
+                                    <img class="downvote-image" src="images-and-iconi/downvote.jpg" onclick="toggleDownvote(this)">
+                                </button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/comment.jpg" class="post-interactive-icon"> 2.6k</button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/award.jpg" class="post-interactive-icon"> Award</button>
+                                <div class="share-dropdown">
+                                    <button class="interactive-buttons" id="share"> <img src="images-and-iconi/share.jpg" class="post-interactive-icon">Share</button>
+                                    <div class="share-dropdown-menu">
+                                        <ul>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/copylink.jpg" class="menu-icons">
+                                                <p>Copy Link</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/crosspost.jpg" class="menu-icons">
+                                                <p>Cross Post</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/embed.jpg" class="menu-icons">
+                                                <p>Embed</p>
+                                            </button>
+                                        </ul>
+                                </div>
                             </ul>
                         </nav>
             </article>
@@ -370,10 +415,31 @@
                 </button>
                         <nav>
                             <ul id="post-interactive-buttons">
-                                <button class="interactive-buttons"> Like</button>
-                                <button class="interactive-buttons"> Comment</button>
-                                <button class="interactive-buttons"> Award</button>
-                                <button class="interactive-buttons"> Share</button>
+                                <button id="like-button"class="vote-button"> 
+                                    <img class="upvote-image" src="images-and-iconi/upvote.jpg" onclick="toggleUpvote(this)">
+                                    <p class="like-number">29k</p>
+                                    <img class="downvote-image" src="images-and-iconi/downvote.jpg" onclick="toggleDownvote(this)">
+                                </button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/comment.jpg" class="post-interactive-icon"> 5.1k</button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/award.jpg" class="post-interactive-icon"> Award</button>
+                                <div class="share-dropdown">
+                                    <button class="interactive-buttons" id="share"> <img src="images-and-iconi/share.jpg" class="post-interactive-icon">Share</button>
+                                    <div class="share-dropdown-menu">
+                                        <ul>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/copylink.jpg" class="menu-icons">
+                                                <p>Copy Link</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/crosspost.jpg" class="menu-icons">
+                                                <p>Cross Post</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/embed.jpg" class="menu-icons">
+                                                <p>Embed</p>
+                                            </button>
+                                        </ul>
+                                </div>
                             </ul>
                         </nav>
             </article>
@@ -395,10 +461,31 @@
                 </button>
                         <nav>
                             <ul id="post-interactive-buttons">
-                                <button class="interactive-buttons"> Like</button>
-                                <button class="interactive-buttons"> Comment</button>
-                                <button class="interactive-buttons"> Award</button>
-                                <button class="interactive-buttons"> Share</button>
+                                <button id="like-button"class="vote-button"> 
+                                    <img class="upvote-image" src="images-and-iconi/upvote.jpg" onclick="toggleUpvote(this)">
+                                    <p class="like-number">8.8k</p>
+                                    <img class="downvote-image" src="images-and-iconi/downvote.jpg" onclick="toggleDownvote(this)">
+                                </button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/comment.jpg" class="post-interactive-icon"> 16k</button>
+                                <button class="interactive-buttons"><img src="images-and-iconi/award.jpg" class="post-interactive-icon"> Award</button>
+                                <div class="share-dropdown">
+                                    <button class="interactive-buttons" id="share"> <img src="images-and-iconi/share.jpg" class="post-interactive-icon">Share</button>
+                                    <div class="share-dropdown-menu">
+                                        <ul>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/copylink.jpg" class="menu-icons">
+                                                <p>Copy Link</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/crosspost.jpg" class="menu-icons">
+                                                <p>Cross Post</p>
+                                            </button>
+                                            <button class="share-menu-buttons">
+                                                <img src="images-and-iconi/embed.jpg" class="menu-icons">
+                                                <p>Embed</p>
+                                            </button>
+                                        </ul>
+                                </div>
                             </ul>
                         </nav>
             </article>
