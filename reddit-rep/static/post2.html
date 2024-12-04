@@ -349,14 +349,22 @@
                     <button class="commentB" type="button">Share</button>
                 </section>
                 
-                <section class = "comments">
-                    <input type = "text">
+                <section class = "Addcomments">
+                    <input type = "text" value="Add a comment">
+                </section>
+                <section class="underC">
+                    <label for="sort">Sort by</label>
+                    <select name="sort" id="sort">
+                        <option value="Best">Best</option>
+                        <option value="New">New</option>
+                        <option value="Old">Old</option>
+                    </select>
+                    <input type="text" value="" placeholder="Search Comments">
                 </section>
                 <section class="comments">
                     <ul id="comments-list">
-                      <!-- Comments will be dynamically added here -->
                     </ul>
-                  </section>
+                </section>
             </main>
         </article>
         <aside class = "rside">
@@ -391,8 +399,8 @@
             </ol>
             <h3 class = "break">Moderators</h3>
             <ul>
-                <li><img alt = "icon" src="Icons/p1.jpg" class = "rIcon" /> r/username1</li>
-                <li><img alt = "icon" src="Icons/p1.jpg" class = "rIcon" /> r/username2</li>
+                <li><img alt = "icon" src="Icons/bear1.png" class = "rIcon" /> r/username1</li>
+                <li><img alt = "icon" src="Icons/bear2.png" class = "rIcon" /> r/username2</li>
             </ul>
             <p><button class = "env"><img alt = "icon" src="Icons/envelope.png" width = "25" height = "25"/>message the mods</button></p>    
         </aside>
