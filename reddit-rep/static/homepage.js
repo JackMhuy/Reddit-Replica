@@ -1,8 +1,9 @@
+// Aside Dropdown
 const dropDownHeader = document.querySelector('.dropdown-header');
 const dropDownContent = document.querySelector('.dropdown-content');
 
 dropDownHeader.addEventListener('click', () => {
-    // Toggle the 'open' class
+    // Toggle the 'close' class
 dropDownContent.classList.toggle('close');
 });
 
@@ -71,7 +72,7 @@ shareButtons.forEach(share => {
     });
 });
 
-
+//togglable stars
 function changeImage(img) {
     const currentSrc = img.src; // Full URL of the image
     if (currentSrc.endsWith("toggle-star.jpg")) {
@@ -79,10 +80,6 @@ function changeImage(img) {
     } else {
         img.src = "images-and-iconi/toggle-star.jpg";
     }
-
-//const button = img.closest(".community-sidebar"); // Get the closest button element
-//    const parent = document.getElementById("community-list"); // Get the parent container
-//    parent.prepend(button); // Move the button to the top of the parent
 }
 
 function toggleUpvote(upvoteImg) {
